@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="asia.kanopi.fingerreader.MainActivity">
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan finger"
+        android:layout_centerHorizontal="true"
+        android:onClick="startScan"/>
+
+    <ImageView
+        android:id="@+id/ivFingerDisplay"
+        android:layout_width="384dp"
+        android:layout_height="290dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:contentDescription="Scanned fingerprint"
+        android:layout_below="@+id/buttonScan"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ivFingerDisplay"
+        android:layout_centerHorizontal="true"
+         />
+
+
+
+</RelativeLayout>
